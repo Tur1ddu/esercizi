@@ -1,10 +1,11 @@
 console.log("------------TENTACOLATTE FUNZIONE 6------------");
 
 function generaPassword(lunghezza) {
-    let smem= "duaisduaisjdsijdaskljdlakKSSKKSLAKLL;LCKPLCOPAKOAJOJA**ç°§°:°ççç°°@@##@[@suriopjuskdjaskdjasiojdkasjdiopwukadjisaueiwjdiasdjskamhjobn";
+    const alfanumerici = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     let mem= "";
     for(let i = 0; i < lunghezza; i++ ){
-        mem+=smem[i];
+        let variabile = Math.floor(Math.random() * alfanumerici.length-1) +1;
+        mem+=alfanumerici[variabile];
     }
     return mem;
 }
