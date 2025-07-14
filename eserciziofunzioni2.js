@@ -1,25 +1,10 @@
 console.log("------------TENTACOLATTE FUNZIONE 2------------");
 function isPari(numero) {
-
-    /*
-    let bol = true;
-    let bul = false;
+    let bol = false;
     if(numero%2 === 0){
-        numero = bol; //4 = true (?) | 7 = true
-    }else{
-       bol = bul; //(?)
+        bol = true; 
     }
     return bol;
-
-    */
-
-    let result = false;
-
-    if(numero%2 === 0) {
-        result = true
-    }
-
-    return result;
 }
 
 
