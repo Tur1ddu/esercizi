@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <title>La Mia Pagina</title>
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: white;
+                min-height: 100vh;
+            }
+            
+            .card {
+                background: rgba(255, 255, 255, 0.1);
+                padding: 30px;
+                border-radius: 15px;
+                margin: 20px 0;
+                backdrop-filter: blur(10px);
+                border: 1px solid rgba(255, 255, 255, 0.2);
+            }
+            
+            h1 {
+                text-align: center;
+                font-size: 36px;
+                margin-bottom: 30px;
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            }
+            
+            .info-box {
+                background: rgba(255, 255, 255, 0.2);
+                padding: 20px;
+                margin: 15px 0;
+                border-radius: 10px;
+                font-size: 18px;
+            }
+            
+            .highlight {
+                color: #ffeb3b;
+                font-weight: bold;
+            }
+            
+            .data-oggi {
+                text-align: center;
+                font-size: 16px;
+                color: #e3f2fd;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <h1 id="titolo-principale">Caricamento...</h1>
+            
+            <div class="info-box">
+                <strong>Nome:</strong> <span id="nome-utente">Caricamento...</span>
+            </div>
+            
+            <div class="info-box">
+                <strong>Età:</strong> <span id="eta-utente">Caricamento...</span> anni
+            </div>
+            
+            <div class="info-box">
+                <strong>Città:</strong> <span id="citta-utente">Caricamento...</span>
+            </div>
+            
+            <div class="info-box">
+                <strong>Anno di nascita:</strong> <span id="anno-nascita" class="highlight">Caricamento...</span>
+            </div>
+
+            <div class="info-box">
+                <strong>Messaggio del giorno:</strong><br>
+                <span id="messaggio-giorno">Caricamento...</span>
+            </div>
+        </div>
+    </body>
+</html>

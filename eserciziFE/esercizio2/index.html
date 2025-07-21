@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <title>Generatore di Liste</title>
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+                margin: 0;
+                padding: 20px;
+                min-height: 100vh;
+            }
+            
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+                background: white;
+                border-radius: 15px;
+                padding: 30px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            }
+            
+            h1 {
+                text-align: center;
+                color: #2d3436;
+                font-size: 32px;
+                margin-bottom: 30px;
+            }
+            
+            .sezione {
+                margin-bottom: 40px;
+                padding: 25px;
+                background: #f8f9fa;
+                border-radius: 10px;
+                border-left: 5px solid #00b894;
+            }
+            
+            .sezione h2 {
+                color: #00b894;
+                margin-bottom: 20px;
+                font-size: 24px;
+            }
+            
+            .lista-studenti {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 15px;
+            }
+            
+            .studente-card {
+                background: white;
+                padding: 15px;
+                border-radius: 8px;
+                border: 2px solid #e9ecef;
+                text-align: center;
+            }
+            
+            .lista-prodotti li {
+                padding: 10px;
+                margin: 8px 0;
+                background: #e3f2fd;
+                border-radius: 5px;
+                list-style: none;
+            }
+            
+            .lista-prodotti {
+                padding: 0;
+            }
+            
+            .colore-box {
+                display: inline-block;
+                width: 60px;
+                height: 60px;
+                margin: 10px;
+                border-radius: 50%;
+                border: 3px solid #2d3436;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            }
+            
+            .statistiche {
+                background: #fff3cd;
+                padding: 20px;
+                border-radius: 8px;
+                margin-top: 20px;
+            }
+            
+            .stat-item {
+                font-size: 18px;
+                margin: 10px 0;
+                color: #856404;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>📝 Generatore di Liste Automatico</h1>
+            
+            <div class="sezione">
+                <h2>👥 Lista Studenti della Classe</h2>
+                <div id="lista-studenti" class="lista-studenti">
+                    <!-- JavaScript genererà gli studenti qui -->
+                </div>
+            </div>
+            
+            <div class="sezione">
+                <h2>🛒 Prodotti nel Negozio</h2>
+                <ul id="lista-prodotti" class="lista-prodotti">
+                    <!-- JavaScript genererà i prodotti qui -->
+                </ul>
+            </div>
+            
+            <div class="sezione">
+                <h2>🎨 Palette Colori</h2>
+                <div id="palette-colori">
+                    <!-- JavaScript genererà i colori qui -->
+                </div>
+            </div>
+            
+            <div class="statistiche">
+                <h3>📊 Statistiche Automatiche</h3>
+                <div class="stat-item">Totale studenti: <strong id="totale-studenti">0</strong></div>
+                <div class="stat-item">Totale prodotti: <strong id="totale-prodotti">0</strong></div>
+                <div class="stat-item">Totale colori: <strong id="totale-colori">0</strong></div>
+                <div class="stat-item">Studente più giovane: <strong id="studente-giovane">-</strong></div>
+                <div class="stat-item">Prodotto più costoso: <strong id="prodotto-costoso">-</strong></div>
+            </div>
+        </div>
+    </body>
+</html>
