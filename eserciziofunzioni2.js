@@ -1,10 +1,6 @@
 console.log("------------TENTACOLATTE FUNZIONE 2------------");
 function isPari(numero) {
-    let bol = false;
-    if(numero%2 === 0){
-        bol = true; 
-    }
-    return bol;
+    return numero%2 === 0;
 }
 
 

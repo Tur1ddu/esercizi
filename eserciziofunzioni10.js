@@ -1,21 +1,21 @@
 console.log("------------TENTACOLATTE FUNZIONE 10------------");
 
 function convertiMinuti(minuti){
-    let stringa = "";
+    let risultato = "";
     let numero = 60;
-    let risultato = 0 ;
     let resto = 0 ;
     if (minuti >= 60 ){
         resto = minuti % numero;
-        risultato = (minuti - resto) / numero;
-        stringa = risultato + " ore e " + resto + " minuti ";
+        let ore = (minuti - resto) / numero;
+        risultato = ore + " ore e " + resto + " minuti ";
     } else if (minuti >= 0) {
-        stringa = minuti + "minuti";
+        risultato = minuti + " minuti";
     }else if (minuti < 0){
-        stringa = "minuti non validi";
+        risultato = "minuti non validi";
     }
-    return stringa;
+    return risultato;
 }
+
 console.log(convertiMinuti(120));        // "2 ore e 0 minuti"
 console.log(convertiMinuti(45));        // "45 minuti"
 console.log(convertiMinuti(90));        // "1 ora e 30 minuti"

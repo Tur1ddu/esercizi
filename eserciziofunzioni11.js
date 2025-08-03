@@ -1,6 +1,6 @@
 console.log("------------TENTACOLATTE FUNZIONE 10------------");
 function calcoloEta(annoNascita){
-    let annoCorrente = 2024;
+    const annoCorrente = 2024;
     let eta = 0;
     let stringa = "";
     if (annoNascita > annoCorrente){
@@ -14,13 +14,6 @@ function calcoloEta(annoNascita){
     }
     return eta > 0 ? eta : stringa;  
 }
-
-
-
-
-
-
-
 
 console.log(calcoloEta(2000));      //  24
 console.log(calcoloEta(1995));      //  29

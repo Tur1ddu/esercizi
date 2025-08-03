@@ -1,18 +1,18 @@
 console.log("------------TENTACOLATTE FUNZIONE 13------------");
 
-function applicaSconto(prezo1,sconto){
-    let risultato = (prezo1 - (sconto * prezo1) / 100) ;
-    let stringa = "";
-    let numero = 0;
-    if (typeof stringa === typeof prezo1){
-         stringa = "dati non validi";
+function applicaSconto(prezzo,sconto){
+    let errore = "";
+    let risultato = 0;
+    if ("string" === typeof prezzo){
+         errore = "dati non validi";
     }else if (sconto > 100){
-        stringa = "sconto troppo alto";
+        errore = "sconto troppo alto";
     }else{
-        numero = risultato ;
+        risultato = (prezzo - (sconto * prezzo) / 100) ;
     }
-     return numero > 0 ? risultato : stringa;
+     return risultato > 0 ? risultato : errore;
 }
+
 console.log(applicaSconto(100, 20)); // 80
 console.log(applicaSconto(50, 10)); // 45
 console.log(applicaSconto(100, 150)); // "sconto troppo alto"

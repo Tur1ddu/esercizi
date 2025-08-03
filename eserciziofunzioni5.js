@@ -9,6 +9,7 @@ function contaCarattere(testo, carattere) {
   }
   return count;
 }
+
 // Test
 console.log(contaCarattere("javascript", "a")); // 2
 console.log(contaCarattere("hello world", "l")); // 3

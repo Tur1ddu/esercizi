@@ -2,16 +2,10 @@ console.log("------------TENTACOLATTE FUNZIONE 17------------");
 
 
 function isPalindromo(palindrom){
-    let buleana = false;
     palindrom = palindrom.toUpperCase();
     palindrom = palindrom.replace(/[^a-zA-Z0-9]/g, "");
 
-    if (palindrom === palindrom.split('').reverse().join('')){
-        buleana = true;
-    }else {
-        buleana = false;
-    }
-return buleana ;
+    return palindrom === palindrom.split('').reverse().join('') ;
 }
 
 console.log(isPalindromo("anna")); // true

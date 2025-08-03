@@ -1,7 +1,6 @@
 console.log("------------TENTACOLATTE FUNZIONE 19------------");
 
-/*da sistemare tutto visto che i log sono tutti sbagliati */
-function scontoProgressivo( prezzo, quantita){
+function scontoProgressivo(prezzo, quantita) {
     let totale = 0; 
     let stringa = "";
     let sconto = 0;

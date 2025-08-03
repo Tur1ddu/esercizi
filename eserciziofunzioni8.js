@@ -10,10 +10,6 @@ function somma(numeri1, numeri2){
 }
 
 
-
-
-
-
 console.log(somma(3, 7));       // 10
 console.log(somma(-2, 5));      // 3
 console.log(somma(3, "abc"));   // errore

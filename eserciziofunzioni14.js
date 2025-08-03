@@ -3,15 +3,14 @@ console.log("------------TENTACOLATTE FUNZIONE 14------------");
 function creaIniziali(nome){
     let stringa = "";
     let iniziale = "";
-    if (nome === ""){
+    if (nome === "" || "string" !== typeof nome){
         stringa = "nome non valido";
     }else {
         iniziale = nome[0] + ".";
 
         for(let i = 0; i < nome.length; i++){ 
             if (nome[i] === " "){
-            iniziale += nome[i + 1]+ ".";
-            
+                iniziale += nome[i + 1]+ ".";
             }
         }
     }

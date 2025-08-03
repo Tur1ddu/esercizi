@@ -1,24 +1,24 @@
 console.log("------------TENTACOLATTE FUNZIONE 20------------");
 
 function fibonacci(n){
-    let sequenza = 0;
     let stringa = "";
     let a = 0;
     let b = 1;
     if (n < 0){
-    stringa = "imput non valido"; 
+        stringa = "input non valido"; 
     }else if (n === 0){
        b = a;
     }else if(n === 1){
         b = 1;
     }else if(n >= 2){
+        let sequenza = 0;
         for (let i = 2; i <= n; i++){
             sequenza = a + b;
             a = b;
             b = sequenza;
         } 
     }
-    return n >= 0? b : stringa;
+    return n >= 0 ? b : stringa;
 }
 
 

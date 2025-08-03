@@ -2,12 +2,12 @@ console.log("------------TENTACOLATTE FUNZIONE 6------------");
 
 function generaPassword(lunghezza) {
     const alfanumerici = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-    let mem= "";
+    let psw= "";
     for(let i = 0; i < lunghezza; i++ ){
         let variabile = Math.floor(Math.random() * alfanumerici.length-1) +1;
-        mem+=alfanumerici[variabile];
+        psw+=alfanumerici[variabile];
     }
-    return mem;
+    return psw;
 }
 
 console.log(generaPassword(8)); // Es: "aB3kL9mP"

@@ -1,12 +1,7 @@
 console.log("------------TENTACOLATTE FUNZIONE 7------------");
 
-function raddoppia (numero) {
-    if("number" === typeof numero ){
-       numero += numero;
-    }else{
-        numero = 0;
-    }
-    return numero;
+function raddoppia(numero) {
+    return typeof numero === "number" ? numero*2 : 0;
 }
 
 console.log(raddoppia(5));      // 10

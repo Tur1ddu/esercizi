@@ -14,9 +14,6 @@ function confrontaNumeri(numero1, numero2){
     return stringa;
 }
 
-
-
-
 console.log(confrontaNumeri(10, 5));        // "primo maggiore"
 console.log(confrontaNumeri(3, 8));        // "secondo maggiore"
 console.log(confrontaNumeri(7, 7));        // "uguali"

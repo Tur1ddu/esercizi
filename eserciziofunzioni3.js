@@ -1,24 +1,20 @@
 console.log("------------TENTACOLATTE FUNZIONE 3------------");
 
 function areaRettangolo(base, altezza) {
-    let risultato = base*altezza;
-    return risultato;
+    return base*altezza;
 }
 
 function areaTriangolo(base, altezza) {
-    let risultato = base*altezza/2;
-    return risultato;
+    return base*altezza/2;
 }
 
 function areaCerchio(raggio) {
     const pgreco = 3.14159;
-    let risultato =pgreco*raggio*raggio;
-    return  risultato;
+    return  pgreco*raggio*raggio;
 }
 
 function areaQuadrato(lato) {
-    let risultato = lato*lato;
-    return risultato;
+    return lato*lato;
 }
 
 console.log(areaRettangolo(5, 3)); // 15

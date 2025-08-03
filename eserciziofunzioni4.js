@@ -1,8 +1,7 @@
 console.log("------------TENTACOLATTE FUNZIONE 4------------");
 
 function unisciStringhe(stringa1, stringa2, separatore) {
-    let unione = stringa1+separatore+stringa2;
-    return unione;
+    return stringa1+separatore+stringa2;
 }
 
 // Versione avanzata con numero variabile di parametri (non considerare)

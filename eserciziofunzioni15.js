@@ -1,14 +1,12 @@
 console.log("------------TENTACOLATTE FUNZIONE 15------------");
 
 function numeriCasuali(n){
-    let max = 100;
-    let min = 1;
     let randomica = [];
     for(let i = 0; i < n; i++){
-       const randomicaNumero = Math.floor(Math.random()* (max - min +1 )) + min; 
-        randomica.push(randomicaNumero)
+       const randomicaNumero = Math.floor(Math.random() * 100) + 1; 
+       randomica.push(randomicaNumero)
     }
-    return randomica ;
+    return randomica;
 }
 
 
