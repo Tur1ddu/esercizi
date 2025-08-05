@@ -30,3 +30,35 @@ let colori = ["#ff6b6b", "#4ecdc4", "#45b7d1", "#f9ca24", "#f0932b", "#eb4d4b", 
 mostrare il nome dello studente più giovane, mostrare il prodtto più costoso
 
 */
+function elementi(lista,divhtml){
+   let ul = document.createElement('ul');
+    for (let i = 0; i < lista.length; i++){
+        let li = document.createElement("li");
+        li.innerText = lista[i].nome;
+        if (typeof lista[i] === "string"){
+            li.innerText = lista[i];
+        }
+        ul.appendChild(li);
+    }
+    divhtml.appendChild(ul);
+}
+
+
+window.addEventListener("DOMContentLoaded", function () {
+    let listaUtenti = document.getElementById("lista-studenti");
+    let listaProdotti = document.getElementById("lista-prodotti");
+    let listaColori = document.getElementById("palette-colori");
+    let totStudenti = document.getElementById("totale-studenti");
+    let totProdotti = document.getElementById("totale-prodotti");
+    let totColori = document.getElementById("totale-colori");
+    let giovane = document.getElementById("studente-giovane");
+    let costoso = document.getElementById("prodotto-costoso");
+    totStudenti.innerText = studenti.length;
+    totProdotti.innerText = prodotti.length;
+    totColori.innerText = colori.length;
+    giovane.innerText = Math.min(...studenti.map(s => s.eta));
+    costoso.innerText = Math.max(...prodotti.map(s => s.prezzo));
+    elementi(studenti, listaUtenti);
+    elementi(prodotti, listaProdotti);
+    elementi(colori, listaColori);
+});
