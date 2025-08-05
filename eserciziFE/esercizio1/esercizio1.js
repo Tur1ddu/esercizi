@@ -19,3 +19,35 @@ let messaggi = [
 - Aggiorna tutti i contenuti della pagina
 
 */
+
+function calcoloAnno(eta){
+    const anno = 2025;
+    return anno - eta;
+}
+
+function messaggioCasuale(messaggi){
+    let indice = Math.floor(Math.random() * messaggi.length-1) +1
+    return messaggi[indice];
+}
+
+window.addEventListener("DOMContentLoaded", function () {
+    let nomeUtente = document.getElementById("nome-utente");
+    nomeUtente.innerText = nome;
+    let etaUtente = document.getElementById("eta-utente");
+    etaUtente.innerText= eta;
+    let cittaUtente = document.getElementById("citta-utente");
+    cittaUtente.innerText = citta;
+    let annoUtente = document.getElementById("anno-nascita");
+    annoUtente.innerText = calcoloAnno(eta);
+    let messaggioUtente = document.getElementById("messaggio-giorno");
+    messaggioUtente.innerText = messaggioCasuale(messaggi);
+});
+
+
+
+
+
+
+
+
+
