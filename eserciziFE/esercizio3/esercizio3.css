@@ -1,0 +1,11 @@
+.croix{
+    font-size: large;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    height: 150px;
+    position: relative;
+    left: 50%;
+}
